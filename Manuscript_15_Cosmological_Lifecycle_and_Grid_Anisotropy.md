@@ -1,4 +1,14 @@
+**Manuscript 15**
+
 # Manuscript 15: Cosmological Lifecycle and Grid Anisotropy: The Zip-Up Mechanism and the Parent Lattice Fingerprint
+
+**J. Byron Fisher**  
+*Manuscript: 15*  
+**DOI:** [10.5281/zenodo.21518722](https://doi.org/10.5281/zenodo.21518722)  
+*Affiliation (Independent Researcher)*  
+Corresponding author: j.byron.fisher@gmail.com
+
+---
 
 **Abstract**
 This manuscript presents two interlocking computational experiments that extend the Nested Universe framework established in Manuscript 14. First, we demonstrate the "Horizon Zip-Up" mechanism: as a parent universe thermodynamically relaxes, the emergent impedance gradient defining a black hole's event horizon dissolves monotonically, allowing the child universe to seamlessly fold back into the parent lattice without singularity, firewall, or information loss. Second, we perform a directional anisotropy sweep by injecting relativistic test probes along axial, planar diagonal, and body diagonal trajectories through a deep emergent horizon. The sweep reveals a measurable grid anisotropy (0.40% velocity, 0.55% radial distance) that perfectly respects the octahedral symmetry group $O_h$, providing a deterministic geometric mechanism for the observed CMB quadrupole alignment (the "Axis of Evil") and Lorentz Invariance Violation. A secondary hemispheric dipole from a localized mass asymmetry naturally reproduces the "Great Attractor" anomaly. Together, these results demonstrate that the TEGR 2600 framework predicts not only the lifecycle of nested cosmological structures but also the directional fine structure of the vacuum itself.
