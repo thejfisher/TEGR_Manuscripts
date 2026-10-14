@@ -1,6 +1,7 @@
 # Manuscript 11: Emergent Dimensional Signatures in a Teleparallel Collider: Kaluza-Klein Scaling and Mass-Dependent Dynamics Under Extreme Strain
 
 **J. Byron Fisher**  
+**DOI:** [10.5281/zenodo.21462816](https://doi.org/10.5281/zenodo.21462816)  
 _Affiliation (Independent Researcher)_  
 Corresponding author: j.byron.fisher@gmail.com
 
@@ -384,9 +385,9 @@ I owe an immeasurable debt of gratitude to my wife, whose unwavering support and
 
 ## References
 
-[1] J. B. Fisher, "Resonant Vortex-Dislocation Defects in a Teleparallel Vacuum: A quantum Isomorphism Between 10D String Models and 4D TEGR," *Zenodo* (2025). DOI: [PAPER 1 DOI]
+[1] J. B. Fisher, "Resonant Vortex-Dislocation Defects in a Teleparallel Vacuum: A quantum Isomorphism Between 10D String Models and 4D TEGR," *Zenodo* (2026). DOI: [10.5281/zenodo.23001473](https://doi.org/10.5281/zenodo.23001473)
 
-[2] J. B. Fisher, "Resonant Wave Defects at the Event Horizon: ER=EPR and the AMPS Firewall in a Teleparallel Vacuum," *Zenodo* (2025). DOI: [PAPER 2 DOI]
+[2] J. B. Fisher, "Resonant Wave Defects at the Event Horizon: ER=EPR and the AMPS Firewall in a Teleparallel Vacuum," *Zenodo* (2026). DOI: [10.5281/zenodo.21252171](https://doi.org/10.5281/zenodo.21252171)
 
 [3] R. Aldrovandi and J. G. Pereira, *Teleparallel Gravity: An Introduction* (Springer, Dordrecht, 2013).
 
