@@ -1,59 +1,115 @@
-# Manuscript 12: Emergence of the Holographic Area Law via quantum entanglement
-**Systematic Verification of Ryu-Takayanagi Entropy Scaling in a Classical quantum Surrogate**
+**Manuscript 12**
+
+# Manuscript 12: Topological Annealing and Spontaneous Graph Partitioning
+
+**J. Byron Fisher**  
+*Manuscript: 12*  
+**DOI:** [10.5281/zenodo.23380345](https://doi.org/10.5281/zenodo.23380345)  
+*Affiliation (Independent Researcher)*  
+Corresponding author: j.byron.fisher@gmail.com
 
 ---
 
-## Abstract
-The holographic principle, most notably formalized in the AdS/CFT correspondence and the Ryu-Takayanagi (RT) formula, posits that the entropy of a bounded region of space scales with its boundary area rather than its bulk volume. In this paper, we demonstrate that this Area Law is not exclusively a property of string theory or high-energy quantum gravity. By deploying the TEGR 2600 discrete engine (Preset 10: Holographic Entanglement), we establish a classical phenomenological bridge where purely quantum entanglement between massive particles spontaneously generates RT entropy scaling. In a topologically tethered network of $N=50$ particles, the system's geometric entropy $S(R)$ exhibits a dominant correlation ($R^2 = 0.6296$) with the boundary area $R^2$, confirming that holographic topological ordering can emerge naturally as a topological consequence of non-local Weitzenböck torsion without requiring a complex Hilbert space.
+> [!WARNING] Retraction Notice
+> **The findings originally presented in this manuscript have been retracted due to the discovery of two critical software defects in the TEGR 2600 physics engine that artificially mimicked quantum phase transitions.**
+> 
+> 1. **The Purity Math Bug ($S_2 \approx 14.0$):** The extreme "frustrated" initial entanglement metrics reported for Graph B ($S_2 > 13.0$) were mathematically impossible for an 8-particle subsystem. This was traced to a bug in `entanglement_metrics.py` where the subsystem purity was calculated as the simple mean of the coherence matrix (`np.mean(sub)`) instead of the mean of the squared elements (`np.mean(sub**2)`). Because Ising spin states contain anti-aligned phases ($\pi$), the negative off-diagonal elements artificially canceled the positive diagonal elements, driving the purity to near-zero and falsely inflating the logarithmic $S_2$ entropy to astronomical levels. An exact Ising state is a pure tensor product state with a true initial $S_2$ entropy of $0.0$.
+> 
+> 2. **The Boundary Trap Bug (Final $S_2 = 0.0$):** The claim that the system organically "annealed" to a perfectly ordered state without Kuramoto synchronization was driven by a finite-difference boundary bug in `utils.py`. The spatial gradient calculation explicitly zeroed out the boundary edges of the 3D grid, creating an artificial topological trap. This boundary wall squeezed the particles together, forcing their phases to synchronize purely through extreme spatial compression, rather than any native energy dissipation or topological annealing.
+> 
+> When both bugs were patched out of the core engine, the false "frustration" and the artificial "annealing" curves vanished entirely. The following text has been preserved solely for historical documentation of the original erroneous claims.
 
 ---
 
-## 1. Introduction: The Geometric Surrogate for Holography
-Traditional approaches to testing holographic entropy laws demand immense computational overhead to track genuine quantum entanglement across non-local tensor networks. In contrast, the TEGR 2600 engine operates strictly within a 10D classical extension, where non-local correlations are driven entirely by quantum entanglement (the continuous evolution of de Broglie-Bohm-style internal phase clocks) and topological torsion constraints.
+## 1. Introduction
 
-This study poses a critical question: *If a classical particle system is constrained by a deterministic adjacency matrix (mimicking ER=EPR topological tethers), will its geometric phase-scrambling inherently produce the macroscopic Area Law signatures of a quantum holographic space?*
+Traditional quantum annealing relies on external cooling schedules or simulated quantum fluctuations (transverse field gradients) to drive a spin-glass lattice toward its ground state. The TEGR 2600 engine, operating on Weitzenböck lattice dynamics and Relativistic Adler Equations (RAE), demonstrates a completely different physical mechanism: **Spontaneous Topological Annealing**.
+
+When mapped to an unweighted graph, binary spin defects (Ising spins) can be represented as continuous de Broglie phase clocks operating at $0$ or $\pi$ phase angles. In this experiment, we imported a 16-atom 1D chain topology (derived from Poggi et al.'s One-Axis Twisting metrology studies) to benchmark entanglement generation, alongside three 16-node spin glass Max-Cut datasets (Graphs A, B, and C) provided by Ruan, Zhichao et al.
 
 ## 2. Experimental Setup
-We utilized the **Holographic Entanglement** mode in the TEGR 2600 engine to simulate a topologically connected manifold.
-*   **Particle Count ($N$):** 50 massive particles randomly distributed within a collapse radius of $R=50.0$.
-*   **Topological Tethers:** 300 non-local connections were established within the adjacency matrix ($W_{mat}$). These tethers simulate the boundary-bulk connections posited by holographic duality.
-*   **Interaction Geometry:** Pauli exclusion pressure ($1/r^2$ to $1/r^3$ transitioning) balancing gravitational collapse, regulated by a Weitzenböck torsion factor ($J=1.0$).
-*   **Coupling Mechanism:** Spontaneous phase synchronization was achieved purely via quantum entanglement (historically analogous to Kuramoto models), operating without a predefined gradient descent or simulated annealing schedule.
 
-The engine was permitted to run forward continuously for 5,000 ticks ($dt = 0.02$).
+We ran the TEGR 2600 engine blindly—without explicitly programming a Max-Cut objective function, without a gradient descent solver, without a simulated annealing schedule, and without the Kuramoto Sync mode enabled (Discovery Mode).
 
-## 3. Results: Ryu-Takayanagi Entropy Measurement
-To evaluate the scaling of geometric entropy $S(R)$, we measured the correlation of phase-scrambling as a function of spherical radius $R$ through the bulk manifold. The engine's native Ryu-Takayanagi measurement module tracked the scaling of entropy against both Area ($R^2$) and Volume ($R^3$).
+**Data Splitting and Measurement:**  
+To quantify spontaneous phase partitioning, we measured the von Neumann Entropy ($S_2$) and calculated the Mutual Information (MI) across two distinct topological cuts:
+1. **Halves:** A continuous spatial split (Particles 0-7 vs 8-15).
+2. **Even/Odd:** An interleaved, frequency-like split (Particles 0,2,4,6... vs 1,3,5,7...).
 
-### 3.1 Holographic Scaling Data
-The extracted telemetry for the boundary layers of the manifold confirmed a stark divergence from classical thermodynamic scaling (which predicts volume dominance):
+**Simulation Parameters:**
+* Pauli Exclusion ($U$): 10.0
+* Torsion ($J$): 1.0 ($U/J$ Ratio = 10.00)
+* RAE Phase Clock: ON
+* Wavefunction Guidance: ON
+* Vacuum Damping: ON (0.007)
+* Grid Resolution: $64^3$
+* Total Ticks: 10,000
 
-| Radius ($R$) | Area ($R^2$) | Volume ($R^3$) | Entropy $S(R)$ |
-|--------------|--------------|----------------|----------------|
-| 5376.61 | 28,907,977 | 155,427,038,079 | 33 |
-| 5914.26 | 34,978,534 | 206,872,338,325 | 66 |
-| 6451.91 | 41,627,230 | 268,575,424,159 | 93 |
-| 6989.56 | 48,854,063 | 341,468,805,775 | 112 |
-| 7527.22 | 56,659,034 | 426,484,993,369 | 115 |
-| 8064.87 | 65,042,143 | 524,556,497,135 | 131 |
-| 8602.52 | 74,003,391 | 636,615,827,269 | 132 |
+## 3. Results: Spontaneous Graph Partitioning and Entanglement Scaling
 
-**Global Correlation Metrics:**
-*   **Correlation with Area ($R^2$):** $0.6296$
-*   **Correlation with Volume ($R^3$):** $0.5228$
+### 3.1 Phenomenological Scaling of 1D OAT Metrology (Poggi Benchmark)
+Before analyzing the complex Max-Cut graphs, we benchmarked the engine against the 16-atom 1D chain geometry utilized by Poggi et al. in their June 2025 OAT metrology simulations. By mapping the classical $S_2$ entropy generation over the integration ticks, the TEGR 2600 engine natively reproduced the exact phenomenological scaling of the Quantum Fisher Information (QFI) bounds produced by Poggi's Matrix Product State (MPS) simulations. This confirms that classical geometric phase-scrambling on the Weitzenböck lattice mathematically mirrors genuine quantum entanglement generation.
 
-The simulation explicitly validates that the system's geometric entropy bounds to the surface area. The Area Law dominates, reproducing the Bekenstein-Hawking bound and the Ryu-Takayanagi formula naturally from a classical topological surrogate.
+### 3.2 Max-Cut Spin Glasses (Ruan Benchmarks)
+In all three Ruan graphs (A, B, and C), the topological strain of the network induced rapid and spontaneous spatial clustering and phase alignment. Without any external "cooling", the continuous energy dissipation of the Klein-Gordon pilot-wave field (using a wave decay constant of $0.9999$) naturally annealed the graphs down into stable, highly partitioned states.
 
-### 3.2 PySINDy Verification of the Classical Baseline
-While the system successfully mimicked macroscopic quantum holography, PySINDy extraction of the final trajectory confirms that the underlying physics never departed the classical, deterministic domain. 
+#### Graph A
+Graph A demonstrated a smooth and continuous descent into an ordered phase state.
+* **Initial $S_2$ Entropy:** $\approx 2.75$
+* **Final $S_2$ Entropy:** $0.5061$
+* **Final Purity:** $0.6028$
+* **Mutual Information (Even/Odd):** $0.4300$
+* **Mutual Information (Halves):** $0.4765$
 
-The globally sparse regression identified the following core discrete drivers for the phase router (hue'):
+#### Graph B
+Graph B began with a highly frustrated landscape ($S_2 > 13.0$). Despite this extreme initial disorder, the TEGR framework successfully expelled entropy and locked into an ordered state even cleaner than Graph A.
+* **Initial $S_2$ Entropy:** $\approx 14.0$
+* **Final $S_2$ Entropy:** $0.4533$
+* **Final Purity:** $0.6355$
+* **Mutual Information (Even/Odd):** $0.4502$
+* **Mutual Information (Halves):** $0.4065$
+
+#### Graph C: The Nucleation Event
+Graph C exhibited textbook phase-transition behavior. The graph held steady in a frustrated state ($S_2 \approx 1.4$) until tick 4500, when geometric pressure induced a sudden entropy spike (nucleation), immediately followed by a total phase collapse. This resulted in the sharpest topological partition of the three datasets.
+* **Initial $S_2$ Entropy:** $\approx 1.4$
+* **Final $S_2$ Entropy:** $0.7592$
+* **Final Purity:** $0.4680$
+* **Mutual Information (Even/Odd):** $0.7659$
+* **Mutual Information (Halves):** $0.8160$
+
+## 4. The Strength of the Photonic Benchmark
+
+To validate the physical relevance of this topological annealing, we compared the TEGR 2600 output directly against the physical hardware results recorded by Ruan et al. using a spatial photonic Ising machine. Over 100 physical experimental runs, Ruan's hardware collapsed into specific symmetric energy wells (Max-Cut = 24.0).
+
+* **Symmetry Resolution (Graph B):** Finding the Even/Odd checkerboard phase cut that perfectly matches the photonic hardware's 50% state-split validates that continuous energy dissipation ($\gamma = 0.9999$) explores the exact same energy landscape as the physical photons.
+* **Frustration Hub Identification (Graph C):** The fact that the model organically identified Particle 13 as the keystone frustration hub—matching the physical localization observed by Ruan et al. in nodes 11 through 15—proves that continuous spatial strain accurately maps NP-hard topological bottlenecks.
+
+## 5. Conclusion: The Paradigm Shift
+
+The TEGR 2600 architecture demonstrates that graph partitioning (Max-Cut) does not strictly require localized gradient descent algorithms, external cooling, or explicit quantum annealing schedules. The geometric constraint of a continuous teleparallel phase field enforces rapid, spontaneous ground-state seeking through sheer topological strain.
+
+By defining it as a "new angle" rather than a refutation of the Standard Model, we present a highly efficient, deterministic mathematical lens through which to simulate quantum phase transitions without the computational overhead of tracking complex Hilbert spaces.
+
+## 6. Open Source Challenge and Resource Stamp
+
+The simulation of 10,000 integration ticks per graph completed in precisely **18 seconds** on consumer hardware. The full source code for the TEGR 2600 engine has been made publicly available on GitHub: https://github.com/thejfisher/TEGR-2600
+
 ```text
-hue' = -0.045 x +  0.035 y + -0.051 z +  0.079 r + -0.004 hue + -1.049 gamma +  0.068 m0 
-       + 85594.569 1/r^3 + -2238.351 1/r^2 + -0.228 sin(hue) +  0.083 cos(hue) 
-       ... (R^2 = 0.9971)
-```
-The exceptional confidence ($R^2 = 0.9971$) in extracting standard spatial ($1/r^3, 1/r^2$) and Lorentz ($\gamma$) components proves that the holographic behavior is a purely emergent phenomenon driven by topological constraint matrices interacting with deterministic forces, rather than genuine non-local quantum state collapse.
+Simulation complete: 10000 ticks, 16 particles in 18.00 seconds
 
-## 4. Conclusion
-We have demonstrated that the core phenomenological signature of holographic space—the scaling of entropy with boundary area—can be organically synthesized in a classical, deterministic manifold. By replacing "genuine quantum entanglement" with quantum entanglement across a topologically tethered network, the TEGR 2600 engine successfully modeled a holographic phase transition. This establishes a computationally efficient, deterministic geometric toy model capable of probing the thermodynamic limits of spacetime without the severe scaling costs of tensor network quantum simulators.
+--- System Resources Used ---
+CPU: AMD64 Family 26 Model 68 Stepping 0, AuthenticAMD (8 Cores) | Util: 9.4%
+DRAM (System RAM): 19.2 GB used / 61.6 GB total (31.1%)*
+GPU: NVIDIA GeForce RTX 5070
+VRAM Allocated: 0.01 GB
+VRAM Reserved:  0.04 GB
+-----------------------------
+*Note: Base system RAM is 12GB; overage reflects OS-level pagefile/shared memory allocation.
+```
+
+---
+
+## References
+
+1. Ruan, Z., et al. "Spatial Photonic Ising Machine." Research exploring spatial light modulators and coherent optical propagation to solve NP-hard Max-Cut problems.
+2. Poggi, P., et al. (2025). *Physical Review Letters*. Research exploring One-Axis Twisting (OAT) metrology, Quantum Fisher Information (QFI) bounds, and Matrix Product State (MPS) simulations in 1D chain topologies.
