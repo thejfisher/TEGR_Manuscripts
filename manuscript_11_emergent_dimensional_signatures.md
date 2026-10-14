@@ -1,7 +1,8 @@
 # Manuscript 11: Emergent Dimensional Signatures in a Teleparallel Collider: Kaluza-Klein Scaling and Mass-Dependent Dynamics Under Extreme Strain
 
 **J. Byron Fisher**  
-**DOI:** [10.5281/zenodo.21462816](https://doi.org/10.5281/zenodo.21462816)  
+*Manuscript: 11*  
+**DOI:** [10.5281/zenodo.21464332](https://doi.org/10.5281/zenodo.21464332)  
 _Affiliation (Independent Researcher)_  
 Corresponding author: j.byron.fisher@gmail.com
 
