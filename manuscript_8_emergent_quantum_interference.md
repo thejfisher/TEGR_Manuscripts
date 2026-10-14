@@ -3,6 +3,8 @@
 # Manuscript 08: Emergent Transference Wave Dynamics from quantum Wave Defects in a Teleparallel Vacuum
 
 **J. Byron Fisher**  
+*Manuscript: 08*  
+**DOI:** [10.5281/zenodo.23379163](https://doi.org/10.5281/zenodo.23379163)  
 *Affiliation (Independent Researcher)*  
 Corresponding author: j.byron.fisher@gmail.com
 
@@ -109,4 +111,4 @@ As discussed in our primary work, this framework operates strictly within the pa
 4. Tonomura, A., et al. (1989). *Demonstration of single-electron buildup of an interference pattern.* American Journal of Physics, 57(2), 117-120.
 5. Arndt, M., et al. (1999). *Wave-particle duality of C60 molecules.* Nature, 401(6754), 680-682.
 6. Bochner, S. (1946). *Vector fields and Ricci curvature.* Bulletin of the American Mathematical Society, 52(9), 776-797.
-7. Fisher, J. B. (2026). *Resonant Wave Defects in a Teleparallel Vacuum: A quantum Extension of 10-Dimensional Space in Flat Spacetime.*
+7. Fisher, J. B. (2026). *Resonant Wave Defects in a Teleparallel Vacuum: A 10-Dimensional Deterministic Toy Model in Flat Spacetime.* [10.5281/zenodo.23001473](https://doi.org/10.5281/zenodo.23001473)
