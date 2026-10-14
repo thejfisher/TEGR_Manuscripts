@@ -1,5 +1,7 @@
 # Teleparallel Equivalent of General Relativity (TEGR) — Manuscript Corpus
 
+[![DOI](https://zenodo.org/badge/DOI/10.5281/zenodo.23380805.svg)](https://doi.org/10.5281/zenodo.23380805)
+
 **Author:** J. Byron Fisher  
 *Affiliation: Independent Researcher*  
 **Contact:** j.byron.fisher@gmail.com  
