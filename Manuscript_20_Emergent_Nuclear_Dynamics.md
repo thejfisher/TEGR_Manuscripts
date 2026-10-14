@@ -1,3 +1,6 @@
+> **[METHODOLOGICAL CLARIFICATION & ENGINE UPGRADE NOTICE - 2026-10-13]**
+> *The linear Hooke's Law restoring polynomial ($k = -2.5233$) interpreted as quark confinement was a mechanical symptom of the explicit damping and matrix strain limits of the legacy solver. In the purified, energy-conserving TEGR Genesis vacuum, the topological string tension is absent. The continuous geometry natively supports infinite-range $1/r^2$ gravitational potentials, confirming that topological snapping is an artifact of discrete boundary damping rather than an emergent strong nuclear force.*
+
 # Manuscript 20: Emergent Nuclear Dynamics: Confinement and Parity Violation in Continuous Topological Matrices
 
 ## 1. Introduction: The Lamb Shift and the Vacuum
