@@ -2,8 +2,9 @@
 
 # Manuscript: 02 - quantum entanglement and Tensor Mechanics in a Discrete TEGR Lattice
 
-**J. Byron Fisher**
-**Manuscript: 02**
+**J. Byron Fisher**  
+**Manuscript: 02**  
+**DOI:** [10.5281/zenodo.21252171](https://doi.org/10.5281/zenodo.21252171)  
 **Corresponding author:** j.byron.fisher@gmail.com
 
 **Abstract**
