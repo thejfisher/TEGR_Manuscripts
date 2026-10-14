@@ -74,7 +74,7 @@ This computational model provides an airtight mathematical validation of the exa
 ---
 
 ## 6. Data and Code Availability
-The complete Python implementation of the TEGR continuous engine, including the quantum Antenna array simulation, the PTA stochastic noise injector, and the co-rotating PySINDy extraction pipeline, is open-source and publicly available on GitHub at: https://github.com/thejfisher/tegr-quantum-antenna.
+The complete Python implementation of the TEGR continuous engine, including the Kinematic Antenna array simulation, the PTA stochastic noise injector, and the co-rotating PySINDy extraction pipeline, is open-source and publicly available on GitHub at: https://github.com/thejfisher/tegr-kinematic-antenna.
 
 ---
 
@@ -85,5 +85,5 @@ The author acknowledges the use of artificial intelligence tools (specifically L
 
 ## 7. References
 [1] Thompson, M. (2026). "The Galaxy's Spin Is Hiding in the Hum of Gravitational Waves." *Universe Today*.
-[2] Fisher, J. B. (2026). *Resonant Wave Defects in a Teleparallel Vacuum: A quantum Extension of 10-Dimensional Space in Flat Spacetime*. Zenodo. https://doi.org/10.5281/zenodo.20401620
-[3] Fisher, J. B. (2026). *Phase Synchronization and Matrix Mechanics in a Discrete TEGR Lattice*. Zenodo. https://doi.org/10.5281/zenodo.20401719
+[2] Fisher, J. B. (2026). *Resonant Wave Defects in a Teleparallel Vacuum: A 10-Dimensional Deterministic Toy Model in Flat Spacetime*. Zenodo. https://doi.org/10.5281/zenodo.23001473
+[3] Fisher, J. B. (2026). *Phase Synchronization and Matrix Mechanics in a Discrete TEGR Lattice*. Zenodo. https://doi.org/10.5281/zenodo.21252171
