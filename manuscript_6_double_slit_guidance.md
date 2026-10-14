@@ -2,11 +2,16 @@
 
 # Manuscript 06: Observational Report: Deterministic Emergence of Transference Wave Dynamics in a Teleparallel Double-Slit Scatterer
 
-**Authors:** Jonathan Byron Fisher
-**Abstract:** 
-We report computational findings from a discrete quantum teleparallel continuum lattice configured to simulate a standard double-slit scattering experiment. Utilizing the Tonomura protocol [1] for single-particle coherent beam injection, the simulation examined the role of local geometric interactions in particle scattering. By applying PySINDy sparse regression to 50,000 frames of high-fidelity trajectory data, we extracted the underlying analytical equations governing the transverse and vertical accelerations of the particles as they traversed the interference gaps. We find that while Pauli spin-field repulsion provides a robust "Phase Router," the emergence of a true spatial interference pattern requires the integration of an additional quantum wavefunction (the "cost of existence").
+**J. Byron Fisher**  
+*Manuscript: 06*  
+**DOI:** [10.5281/zenodo.23379261](https://doi.org/10.5281/zenodo.23379261)  
+*Affiliation (Independent Researcher)*  
+Corresponding author: j.byron.fisher@gmail.com
 
-# Manuscript 6: The Phase Router - Geometric Guidance and the Necessity of the Wave
+### Subtitle: The Phase Router — Geometric Guidance and the Necessity of the Wave
+
+**Abstract:**  
+We report computational findings from a discrete quantum teleparallel continuum lattice configured to simulate a standard double-slit scattering experiment. Utilizing the Tonomura protocol [1] for single-particle coherent beam injection, the simulation examined the role of local geometric interactions in particle scattering. By applying PySINDy sparse regression to 50,000 frames of high-fidelity trajectory data, we extracted the underlying analytical equations governing the transverse and vertical accelerations of the particles as they traversed the interference gaps. We find that while Pauli spin-field repulsion provides a robust "Phase Router," the emergence of a true spatial interference pattern requires the integration of an additional quantum wavefunction (the "cost of existence").
 
 ---
 
