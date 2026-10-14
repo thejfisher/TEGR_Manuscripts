@@ -1,5 +1,9 @@
 # Manuscript 10: Computational Validation of the Mark Thompson Prediction: Extracting the Lopsided Galactic Spin from a Stochastic Gravitational Wave Background
 
+**J. Byron Fisher**  
+**DOI:** [10.5281/zenodo.21401418](https://doi.org/10.5281/zenodo.21401418)  
+**Corresponding author:** j.byron.fisher@gmail.com
+
 **Abstract**
 The planned Laser Interferometer Space Antenna (LISA) mission is theorized to map the shape and spin of the Milky Way by detecting a "lopsided" directional distortion in the stochastic gravitational wave background—a macroscopic Rotational Doppler shift. The primary challenge in this endeavor is the isolation of this subtle phase shift from the immense thermodynamic and spatial static of the cosmos. In this paper, we present a deterministic, discrete causal computational model based on the Teleparallel Equivalent of General Relativity (TEGR) to validate this signal separation. By utilizing a quantum Antenna array subject to a macroscopic galactic spin and injecting authentic Pulsar Timing Array (PTA) stochastic residuals, we demonstrate via PySINDy sparse regression that the topological phase dimension natively isolates relativistic time dilation, rendering it structurally immune to spatial thermodynamic noise.
 
