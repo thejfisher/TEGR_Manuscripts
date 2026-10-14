@@ -1,11 +1,12 @@
 **Manuscript 1**
 
-# Manuscript: 01 - Resonant Wave Defects in a Teleparallel Vacuum: A 10-Dimensional quantum Toy Model in Flat Spacetime
-**J. Byron Fisher**
-*Manuscript: 01*
-
-*Affiliation (Independent Researcher)*
+# Resonant Wave Defects in a Teleparallel Vacuum: A 10-Dimensional Deterministic Toy Model in Flat Spacetime
+**J. Byron Fisher**  
+*Manuscript: 01*  
+**DOI:** [10.5281/zenodo.23001473](https://doi.org/10.5281/zenodo.23001473)  
+*Affiliation (Independent Researcher)*  
 Corresponding author: j.byron.fisher@gmail.com
+
 **Abstract**  
 This paper serves as the first in a chronological series of notes detailing the construction of a deterministic computational toy model designed to track localized topological defects in a flat Weitzenböck spacetime. Drawing on the mechanics of quantum tracking, we construct a 10x10+1 matrix to encode the internal degrees of freedom of these defects. We present a theoretical ansatz modeling fundamental particles not as point masses, but as localized *resonant wave defects* propagating through the torsional geometry of the Teleparallel Equivalent of General Relativity (TEGR). By extracting differentials and mapping properties to continuous field kinematics, we demonstrate that effective classical representations of covariant energy conservation, the Lorentz force, and Pauli exclusion can emerge naturally from the localized phase and vorticity of topological defects. This sets the foundation for tracking quantum variables, ultimately leading to the collinearity traps and regression anomalies explored in subsequent papers.
 
