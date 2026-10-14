@@ -1,5 +1,14 @@
+**Manuscript 14**
+
 # Manuscript 14: Emergent Cosmology: Computational Evidence for Nested Universes via Spatial FDTD Impedance Tensors
 
+**J. Byron Fisher**  
+*Manuscript: 14*  
+**DOI:** [10.5281/zenodo.21499611](https://doi.org/10.5281/zenodo.21499611)  
+*Affiliation (Independent Researcher)*  
+Corresponding author: j.byron.fisher@gmail.com
+
+---
 
 **Abstract**
 
