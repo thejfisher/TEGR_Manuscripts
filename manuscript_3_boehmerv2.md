@@ -1,25 +1,26 @@
 **Manuscript 3**
 
-# Manuscript: 03 - Local Lorentz Invariance and the Boundary Term: A quantum Simulation of $f(T,B) Teleparallel Geometry
+# Manuscript 03: Local Lorentz Invariance and the Boundary Term: A Kinematic Simulation of $f(T,B)$ Teleparallel Geometry
 
-**J. Byron Fisher** 
+**J. Byron Fisher**  
 *Manuscript: 03*  
+**DOI:** [10.5281/zenodo.21463858](https://doi.org/10.5281/zenodo.21463858)  
 Corresponding author: j.byron.fisher@gmail.com
 
 **Abstract**  
-The Teleparallel Equivalent of General Relativity (TEGR) reformulates gravity as a gauge theory of translations utilizing the WeitzenbA ck connection, replacing curvature with torsion. While extensions to this framework, such as $f(T) gravity, offer intriguing cosmological solutions, they suffer from a break in local Lorentz invariance. As demonstrated by Bahamonde, BA hmer, and Wright [1], this invariance can be restored by incorporating a boundary term $B$, yielding $f(T,B) gravity. However, the boundary term is often treated as formal mathematical bookkeeping. In this paper, we present a computational $10 \times 10 + 1$ quantum compactification toy model that physically embodies the boundary term. By modeling fundamental particles as topological wave-defects (vortex-dislocations) within the tetrad field, we show that explicitly engineering internal degrees of freedom—specifically spin-vorticity ($\omega$) and phase-coupling ($\theta$)—acts dynamically as the mechanical equivalent of the $B$ term. We validate this hypothesis via a high-energy computational simulation and extract the governing dynamics using Sparse Identification of Nonlinear Dynamics (SINDy). The data proves that without explicitly engineered internal spin-coupling, the quantum force balance fails catastrophically, violating Lorentz invariance. When this classical phase-coupling is restored, the internal kinematics successfully absorb the structural strain, preserving local Lorentz invariance and continuous energy conservation in this classical analogue framework.
+The Teleparallel Equivalent of General Relativity (TEGR) reformulates gravity as a gauge theory of translations utilizing the Weitzenböck connection, replacing curvature with torsion. While extensions to this framework, such as $f(T)$ gravity, offer intriguing cosmological solutions, they suffer from a break in local Lorentz invariance. As demonstrated by Bahamonde, Böhmer, and Wright [1], this invariance can be restored by incorporating a boundary term $B$, yielding $f(T,B)$ gravity. However, the boundary term is often treated as formal mathematical bookkeeping. In this paper, we present a computational $10 \times 10 + 1$ quantum compactification toy model that physically embodies the boundary term. By modeling fundamental particles as topological wave-defects (vortex-dislocations) within the tetrad field, we show that explicitly engineering internal degrees of freedom—specifically spin-vorticity ($\omega$) and phase-coupling ($\theta$)—acts dynamically as the mechanical equivalent of the $B$ term. We validate this hypothesis via a high-energy computational simulation and extract the governing dynamics using Sparse Identification of Nonlinear Dynamics (SINDy). The data proves that without explicitly engineered internal spin-coupling, the quantum force balance fails catastrophically, violating Lorentz invariance. When this classical phase-coupling is restored, the internal kinematics successfully absorb the structural strain, preserving local Lorentz invariance and continuous energy conservation in this classical analogue framework.
 
 ## 1. Introduction: The Teleparallel Boundary Problem
 
-In General Relativity, the gravitational field is described by the Levi-Civita connection, yielding the Ricci curvature scalar $R$. In the Teleparallel Equivalent of General Relativity (TEGR) [2,3], the fundamental field is the tetrad (vierbein) $e^a_\mu$, equipped with the WeitzenbA ck connection. This choice of connection assumes absolute parallelism (zero curvature), shifting the description of gravity entirely onto the torsion scalar $T$.
+In General Relativity, the gravitational field is described by the Levi-Civita connection, yielding the Ricci curvature scalar $R$. In the Teleparallel Equivalent of General Relativity (TEGR) [2,3], the fundamental field is the tetrad (vierbein) $e^a_\mu$, equipped with the Weitzenböck connection. This choice of connection assumes absolute parallelism (zero curvature), shifting the description of gravity entirely onto the torsion scalar $T$.
 
 Because TEGR and GR differ only by a total derivative—the boundary term $B$—their classical field equations are identical:
-$$ R = -T + B 
+$$ R = -T + B $$
 where $B = 2 \nabla_\mu T^\mu$.
 
 When extending TEGR to modified gravity theories, such as $f(T)$, the action is constructed purely from the torsion scalar. However, unlike $R$, the torsion scalar $T$ is not invariant under local Lorentz transformations. Consequently, pure $f(T)$ gravity theories introduce extra, often unphysical, degrees of freedom and restrict the choice of tetrads [1,4].
 
-To resolve this, Bahamonde, BA hmer, and Wright (2015) extensively formalized $f(T,B)$ gravity [1]. By reintroducing the boundary term into the arbitrary function $f(T,B)$, local Lorentz invariance is structurally preserved. 
+To resolve this, Bahamonde, Böhmer, and Wright (2015) extensively formalized $f(T,B)$ gravity [1]. By reintroducing the boundary term into the arbitrary function $f(T,B)$, local Lorentz invariance is structurally preserved. 
 
 While the mathematics of $f(T,B)$ gravity elegantly resolve the invariance issue, a physical, quantum interpretation of the boundary term $B$ remains elusive. What *is* the boundary term mechanically doing during an extreme dynamic event? 
 
@@ -85,7 +86,7 @@ However, this toy model illustrates that a boundary term need not just be a math
 
 ## References
 
-[1] S. Bahamonde, C. G. BA hmer, and M. Wright, "Modified teleparallel theories of gravity," *Phys. Rev. D* **92**(10), 104042 (2015). arXiv:1508.05120.
+[1] S. Bahamonde, C. G. Böhmer, and M. Wright, "Modified teleparallel theories of gravity," *Phys. Rev. D* **92**(10), 104042 (2015). arXiv:1508.05120.
 
 [2] R. Aldrovandi and J. G. Pereira, *Teleparallel Gravity: An Introduction* (Springer, Dordrecht, 2013).
 
@@ -93,6 +94,6 @@ However, this toy model illustrates that a boundary term need not just be a math
 
 [4] B. Li, T. P. Sotiriou, and J. D. Barrow, "$f(T)$ gravity and local Lorentz invariance," *Phys. Rev. D* **83**(6), 064035 (2011).
 
-[5] J. B. Fisher, "Manuscript: 01 - Resonant Wave Defects in a Teleparallel Vacuum: A quantum Compactification," *Pre-print* (2025).
+[5] J. B. Fisher, "Resonant Wave Defects in a Teleparallel Vacuum: A 10-Dimensional Deterministic Toy Model in Flat Spacetime," *Zenodo* (2026). DOI: [10.5281/zenodo.23001473](https://doi.org/10.5281/zenodo.23001473)
 
 [6] S. L. Brunton, J. L. Proctor, and J. N. Kutz, "Discovering governing equations from data by sparse identification of nonlinear dynamical systems," *Proc. Natl. Acad. Sci. U.S.A.* **113**(15), 3932-3937 (2016).
