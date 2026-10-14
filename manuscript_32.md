@@ -1,3 +1,6 @@
+> **[METHODOLOGICAL CLARIFICATION & ENGINE UPGRADE NOTICE - 2026-10-13]**
+> *The massive restoring coefficient ($-\beta\phi$) and the subsequent temporal Hubble parameter oscillations reported in this manuscript were artifacts of the explicit finite-difference damping rule ($\gamma < 1$, `wave_decay`) utilized in the legacy TEGR 2600 engine. With the transition to the energy-conserving Lagrangian wave rule in TEGR Genesis, the vacuum is natively massless. The spatial geometry expands smoothly without temporal resonance, and $1/r^2$ Newtonian gravity emerges intrinsically from the undamped spatial displacement without requiring background fluid friction.*
+
 **Manuscript 32**
 
 Title: Manuscript 32: Bochner
