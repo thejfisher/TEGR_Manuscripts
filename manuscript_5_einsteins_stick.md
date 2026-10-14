@@ -2,8 +2,9 @@
 
 # Manuscript 05: Einstein's Stick and Topological Soliton Emergence under Relativistic Mechanical Stress in a Teleparallel Lattice
 
-
-**Authors:** Jonathan Byron Fisher
+**Authors:** Jonathan Byron Fisher  
+**DOI:** [10.5281/zenodo.21464032](https://doi.org/10.5281/zenodo.21464032)  
+Corresponding author: j.byron.fisher@gmail.com
 
 **Abstract:** 
 
