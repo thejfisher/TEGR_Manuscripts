@@ -1,9 +1,13 @@
 **Manuscript 13**
 
-# Emergent Quantum Interference, The Sequel
-**Author:** J. Byron Fisher  
+# Manuscript 13: Emergent Quantum Interference, The Sequel
+
+**J. Byron Fisher**  
+*Manuscript: 13*  
+**DOI:** [10.5281/zenodo.21482367](https://doi.org/10.5281/zenodo.21482367)  
 **Date:** August 8, 2026  
-**Manuscript:** 13  
+*Affiliation (Independent Researcher)*  
+Corresponding author: j.byron.fisher@gmail.com  
 
 ## Abstract
 We demonstrate that a deterministic, continuous-strain pilot-wave model (TEGR 2600) natively reproduces quantum entanglement signatures across four distinct physical phenomena—Transmon Qubits, Spontaneous Phase Nucleation, Neutrino Flavor Oscillations, and Holographic Cosmology—without invoking non-local coupling. By constructing a rigorous A/B validation protocol using a nearest-neighbor Kuramoto synchronization mesh as a controlled variable, we prove that all observed phase scrambling originates from discrete geometry propagated through an Eulerian FDTD grid, not from any hidden non-local interaction. Independent cross-validation via SINDy (Sparse Identification of Nonlinear Dynamics) extraction from a separate TEGR Collider pipeline confirms that spatial force dynamics are deterministic ($R^2 \approx 0.999$) while phase evolution is emergently chaotic ($R^2 \approx 0.018$), reinforcing the central thesis: entanglement-class correlations emerge strictly from continuous topological strain.
