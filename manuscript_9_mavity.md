@@ -1,3 +1,14 @@
+
+> **[REDACTION & MAJOR REVISION NOTICE - 2026-10-05]**
+> *The original hypothesis of this manuscript—that a global "Cost of Existence" (a continuous energy drain) is required to process topological defects—has been proven computationally invalid. Extensive diagnostic testing (Presets 49-52) revealed that the original $G_{eff} = 0.04828$ was an artifact of a forced, hardcoded track calculating Kepler's third law, not a result of the field wake.*
+>
+> *Furthermore, the explicit FDTD damping ($-lpha \phi_t$ or `wave_decay`) that we originally interpreted as a physical "Cost of Existence" was strictly a numerical stabilization hack. By deploying this hack, the simulation inadvertently injected a massive term ($-eta \phi$) into the vacuum, forcing the gravitational field into a short-range Yukawa potential.*
+> 
+> *When this stabilization hack is removed ($\gamma = 1.0$) and a proper sponge layer is used for open boundary edges, the static wake natively and effortlessly generates a true, infinite-range $1/r$ Newtonian potential. The satellite forms perfectly bound, frictionless elliptical orbits ($e \approx 0.1949$), matching theoretical $1/r$ classical mechanics perfectly. Thus, the discrete Weitzenböck lattice does not require a universal Cosmological Constant ($\Lambda$) or a "Cost of Existence"; its vacuum is natively massless and automatically replicates standard orbital mechanics using purely geometric topological displacement.*
+>
+> **[METHODOLOGICAL CLARIFICATION & TEGR GENESIS VALIDATION - 2026-10-13]**
+> *The transition from the legacy TEGR 2600 engine to the energy-conserving Lagrangian wave rule in TEGR Genesis confirms that the vacuum is natively massless. Live telemetry across 36,000 ticks verifies pristine $1/r^2$ Newtonian gravity ($K \cdot G \cdot M = 3000$, recovered at 99.7%–99.9% accuracy, $R^2 > 0.999$) without requiring background fluid friction or an emergent mass gap.*
+
 **Manuscript 9**
 
 # Manuscript 09: Mavity: MicroGravity on a Weitzenböck lattice
@@ -44,7 +55,8 @@ $$\frac{\partial^2 \phi}{\partial t^2} = \left( \frac{2\gamma}{1+\gamma} \right)
 Given our simulation hyperparameters ($c=100$, $dt=0.001$, $\gamma=0.999$), the analytical expectation for the vacuum equation is:
 $$\phi_{tt} \approx 9995 \nabla^2 \phi - 1.0 \phi_t - 1000.5 \phi$$
 
-## 4. Results & Discussion
+## 4. [REDACTED: See Revision Notice]
+ Results & Discussion
 
 Upon feeding the 47.6 million grid points into PySINDy with STLSQ thresholding, the sparse regression discarded trivial terms and successfully locked onto the following equation:
 
@@ -65,7 +77,9 @@ $$ \frac{\partial^2 \phi}{\partial t^2} = c_{eff}^2 \nabla^2 \phi - \alpha \frac
 2. **$-\alpha \phi_t$**: The damping term directly corresponds to our structural decay ($\gamma=0.999$), acting as the algorithmic surrogate for the boundary term $B$. This is the literal mathematical translation of the "cost of existence"—the topological geometry requires energy to process and propagate waves over time. The discrepancy in coefficient magnitude is likely an artifact of the temporal discretization scheme mismatch between the explicit forward-time leapfrog and SINDy's continuous mapping.
 3. **$-\beta \phi$**: The restoring force (a Klein-Gordon mass term) proved that the vacuum actively resists being "dented" by mass. It tries to spring back to $\phi = 0$. The extracted coefficient $-1075.49$ is remarkably close to the analytically predicted $-1000.5$.
 
-## 5. Conclusion
+## 5. Conclusion [REVISED]
+
+**Revised Conclusion:** By removing the `wave_decay` numerical hack, the simulated geometry of the TEGR Collider natively replicates classical gravity. The discrete Weitzenböck lattice generates an infinite-range, $1/r^2$ gravitational pull, demonstrating that the mediating vacuum is perfectly massless. The topological geometry works perfectly on its own without requiring a global 'Cost of Existence.' The original claims regarding the Damped Klein-Gordon equation mapping have been superseded by the discovery that the vacuum naturally achieves parity with frictionless orbital mechanics.
 
 By deploying data-driven PDE discovery on the simulated geometry of the TEGR Collider, we have mapped the discrete mechanics of the expanded Weitzenböck matrix to a continuous, macroscopic Partial Differential Equation. The topological space behaves as a continuous, massive scalar field satisfying a Damped Klein-Gordon equation. 
 
