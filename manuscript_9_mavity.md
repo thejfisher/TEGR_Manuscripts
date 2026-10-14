@@ -1,20 +1,31 @@
 
-> **[REDACTION & MAJOR REVISION NOTICE - 2026-10-05]**
+**Manuscript 9**
+
+# Manuscript 09: Mavity: MicroGravity on a Weitzenböck Lattice
+
+**J. Byron Fisher**  
+*Manuscript: 09*  
+*Affiliation (Independent Researcher)*  
+Corresponding author: j.byron.fisher@gmail.com
+
+---
+
+> **[REDACTION & MAJOR REVISION NOTICE - 2026-10-05]**  
 > *The original hypothesis of this manuscript—that a global "Cost of Existence" (a continuous energy drain) is required to process topological defects—has been proven computationally invalid. Extensive diagnostic testing (Presets 49-52) revealed that the original $G_{eff} = 0.04828$ was an artifact of a forced, hardcoded track calculating Kepler's third law, not a result of the field wake.*
 >
-> *Furthermore, the explicit FDTD damping ($-lpha \phi_t$ or `wave_decay`) that we originally interpreted as a physical "Cost of Existence" was strictly a numerical stabilization hack. By deploying this hack, the simulation inadvertently injected a massive term ($-eta \phi$) into the vacuum, forcing the gravitational field into a short-range Yukawa potential.*
+> *Furthermore, the explicit FDTD damping ($-\alpha \phi_t$ or `wave_decay`) that we originally interpreted as a physical "Cost of Existence" was strictly a numerical stabilization hack. By deploying this hack, the simulation inadvertently injected a massive term ($-\beta \phi$) into the vacuum, forcing the gravitational field into a short-range Yukawa potential.*
 > 
 > *When this stabilization hack is removed ($\gamma = 1.0$) and a proper sponge layer is used for open boundary edges, the static wake natively and effortlessly generates a true, infinite-range $1/r$ Newtonian potential. The satellite forms perfectly bound, frictionless elliptical orbits ($e \approx 0.1949$), matching theoretical $1/r$ classical mechanics perfectly. Thus, the discrete Weitzenböck lattice does not require a universal Cosmological Constant ($\Lambda$) or a "Cost of Existence"; its vacuum is natively massless and automatically replicates standard orbital mechanics using purely geometric topological displacement.*
 >
-> **[METHODOLOGICAL CLARIFICATION & TEGR GENESIS VALIDATION - 2026-10-13]**
+> **[METHODOLOGICAL CLARIFICATION & TEGR GENESIS VALIDATION - 2026-10-13]**  
 > *The transition from the legacy TEGR 2600 engine to the energy-conserving Lagrangian wave rule in TEGR Genesis confirms that the vacuum is natively massless. Live telemetry across 36,000 ticks verifies pristine $1/r^2$ Newtonian gravity ($K \cdot G \cdot M = 3000$, recovered at 99.7%–99.9% accuracy, $R^2 > 0.999$) without requiring background fluid friction or an emergent mass gap.*
 
-**Manuscript 9**
+---
 
-# Manuscript 09: Mavity: MicroGravity on a Weitzenböck lattice
-
-**Abstract**
+**Abstract**  
 In classical astrophysical simulations, gravity is imposed top-down via a hardcoded constant ($G = 6.674 \times 10^{-11}$). In this paper, we present a framework exploring how macroscopic gravitational attraction might emerge bottom-up from the geometric strain of a discrete topological space (an expanded Weitzenböck lattice). By observing the spatial processing required to accommodate a moving mass defect within this geometry, we demonstrate that a localized, dynamic "cost of existence" manifests as a topological wake. We employ Sparse Identification of Nonlinear Dynamics (SINDy) on high-resolution grid telemetry in an Eulerian rest frame to blindly extract the underlying Partial Differential Equation (PDE) governing this space. The extracted PDE successfully recovers the foundational damped wave mechanics of the grid, offering an encouraging mathematical framework serving as a **phenomenological bridge** for orbital mechanics and an effective gravitational constant ($G_{eff}$). Rather than claiming a true unified theory, we present this **classical surrogate**—where explicit computational FDTD damping acts as a physical analogue for the teleparallel boundary term $B$—to demonstrate how a discrete framework can simultaneously resolve the quantum-to-classical transition by establishing a deterministic, geometric threshold for Objective Reduction.
+
+---duction.
 
 ---
 
@@ -55,8 +66,7 @@ $$\frac{\partial^2 \phi}{\partial t^2} = \left( \frac{2\gamma}{1+\gamma} \right)
 Given our simulation hyperparameters ($c=100$, $dt=0.001$, $\gamma=0.999$), the analytical expectation for the vacuum equation is:
 $$\phi_{tt} \approx 9995 \nabla^2 \phi - 1.0 \phi_t - 1000.5 \phi$$
 
-## 4. [REDACTED: See Revision Notice]
- Results & Discussion
+## 4. Results & Discussion [REDACTED: See Revision Notice]
 
 Upon feeding the 47.6 million grid points into PySINDy with STLSQ thresholding, the sparse regression discarded trivial terms and successfully locked onto the following equation:
 
@@ -119,7 +129,7 @@ Because the sine function cannot exceed 1.0, the phase synchronization severs, t
 
 1. Einstein, A. (1928). *Riemann-Geometrie mit Aufrechterhaltung des Begriffes des Fernparallelismus*. Sitzungsberichte der Preussischen Akademie der Wissenschaften.
 2. Brunton, S. L., Proctor, J. L., & Kutz, J. N. (2016). *Discovering governing equations from data by sparse identification of nonlinear dynamical systems*. Proceedings of the National Academy of Sciences, 113(15), 3932-3937. (PySINDy).
-3. Penrose, R. (1996). *On gravity\'s role in quantum state reduction*. General Relativity and Gravitation, 28(5), 581-600. (Objective Reduction).
+3. Penrose, R. (1996). *On gravity's role in quantum state reduction*. General Relativity and Gravitation, 28(5), 581-600. (Objective Reduction).
 4. Kuramoto, Y. (1975). *Self-entrainment of a population of coupled non-linear oscillators*. In International symposium on mathematical problems in theoretical physics (pp. 420-422). Springer, Berlin, Heidelberg.
 5. Adler, R. (1973). *A study of locking phenomena in oscillators*. Proceedings of the IRE, 34(6), 351-357.
 6. Bohm, D. (1952). *A Suggested Interpretation of the Quantum Theory in Terms of 'Hidden' Variables. I & II*. Physical Review, 85(2), 166-193. (Bohmian Mechanics and Non-Crossing).
