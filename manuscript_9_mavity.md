@@ -5,6 +5,7 @@
 
 **J. Byron Fisher**  
 *Manuscript: 09*  
+**DOI:** [10.5281/zenodo.23379352](https://doi.org/10.5281/zenodo.23379352)  
 *Affiliation (Independent Researcher)*  
 Corresponding author: j.byron.fisher@gmail.com
 
