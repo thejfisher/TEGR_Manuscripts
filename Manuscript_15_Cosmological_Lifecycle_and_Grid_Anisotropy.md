@@ -293,3 +293,15 @@ $$
 | Vacuum damping | $\lambda_{base}$ | 0.999 |
 | Grid resolution | $N$ | $64^3$ |
 | Time step | $dt$ | 0.001 |
+
+---
+
+## 7. Audit Note: Computational Controls on Probe Anisotropy (2026-10-17)
+
+An independent audit and parameter-control sweep of `anisotropy_sweep.py` was conducted (`ms28_probe_check.py` in `Manuscripts/TEGR but Round/v2/`). While the directional differences in probe velocities were confirmed to emerge consistently, systematic controls identified different origins than those originally hypothesized in §4.1 and §4.3:
+
+1. **Anchor dipole falsified (§4.3):** Flipping the anchor mass from $x = +20$ to $x = -20$ produced an identical velocity difference between Diag +++ and Diag --- ($+0.0346$). The asymmetry is invariant under anchor reflection, disproving the hypothesis that the anchor acts as a "Great Attractor" dipole in this sweep.
+2. **7-point stencil falsified (§4.1):** Substituting an isotropic 27-point Laplacian stencil (weights $14/30, 3/30, 1/30$) produced probe velocities identical to the 7-point stencil across all directions to 4 decimal places ($\Delta v = -0.76\%$). The directional divergence is therefore not driven by the 6-neighbor vs 26-neighbor Laplacian stencil.
+3. **Near-field launch origin:** The velocity differential forms entirely within the first 500 ticks ($r < 30$ units) while the probes traverse the discrete gravity well core, remaining frozen thereafter. When probes are initialized exactly at the field centroid, the anisotropy persists ($-0.95\%$, $+0.0413$).
+4. **Re-run metrics:** The baseline re-run yields $v_{axial} = 0.9498$ and $v_{diag} = 0.9426$ (anisotropy $-0.76\%$, compared to the published $-0.40\%$). The Diag +++ vs Diag --- spread reproduces at $+0.0346$ (published: $+0.0348$).
+
