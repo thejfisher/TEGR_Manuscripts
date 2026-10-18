@@ -71,6 +71,12 @@ This FDTD divergence is the precise computational equivalent of Einstein's inevi
 
 Modified TEGR provides a mechanical alternative. The Cartesian Diver crash proves that any continuous medium must possess a processing limit—an impedance valve ($\lambda$)—to bleed off the kinetic energy of the squeeze and prevent localized strain from diverging to infinity. By reinterpreting the "constant energy density" of the vacuum ($\Lambda$) as the fundamental thermodynamic impedance limit ($\lambda$) mediating a universal topological squeeze, we replace a mysterious cosmic force with standard computational metric dynamics, stabilizing the lattice without breaking relativity. This mechanical reinterpretation resonates with Popławski's cosmological models [12], in which gravitational collapse does not end in a singularity but bounces to create a nested child universe — precisely the topology our engine implements when `nested_enabled=True`.
 
+> [!NOTE]
+> **Author's Resolution & Addendum (October 17, 2026):**  
+> A comprehensive code audit of the TEGR 2600 and TEGR Genesis engines revealed that the Cartesian Diver divergence at tick 41,615 was caused by an unthrottled source coupling: point particles were hardcoded as permanent pumps injecting scalar density at a fixed coordinate rate, ignoring gravitational time dilation. The empirical $\lambda$ drain in TEGR 2600 prevented this explosion, but at the heavy cost of swallowing over $99\%$ of the gravitating field from far away.  
+> Following Dr. Luca Fabbri’s theoretical framework on propagating torsion and spinor back-reaction [18, 19], this divergence has now been physically resolved without needing an ad-hoc dissipative drain ($\lambda$). By scaling source injection by the local wave speed ($S_{\text{eff}} = S \cdot c(\phi)/c_{\text{base}}$), the source throttles down naturally as local coordinate time freezes. This eliminates the Cartesian Diver runaway, settles the core stably, preserves $100\%$ of the mass at infinity, and recovers exact linear Schwarzschild horizon scaling ($r_h \propto M$). See *The Geometry of Source Back-Reaction* (Fisher, 2026).
+
+
 ## 4. The quantum Toll: Modified Dispersion Relation in Flat Spacetime
 
 Sections 2 and 3 demonstrated the lattice's behavior in extreme gravitational environments. A natural question arises: does the topological processing cost manifest even in *flat* spacetime, far from any massive sink?
@@ -127,4 +133,5 @@ Moving forward, this framework offers two distinct paths toward empirical falsif
 [15] Amaro-Seoane, P., et al. (2017). "Laser Interferometer Space Antenna." *arXiv:1702.00786*.
 [16] Punturo, M., et al. (2010). "The Einstein Telescope: a third-generation gravitational wave observatory." *Classical and quantum Gravity*, 27(19), 194002.
 [17] Bochner, S. (1946). "Vector fields and Ricci curvature." *Bulletin of the American Mathematical Society*, 52(9), 776-797.
-
+[18] Fabbri, L. (2017). "Singularity-free spinors in gravity with propagating torsion." *Modern Physics Letters A*, 32(30), 1750221. arXiv:1706.01758.
+[19] Fabbri, L. (2023). "Torsionally-Induced Stability in Spinors." *Universe*, 9(5), 240.
