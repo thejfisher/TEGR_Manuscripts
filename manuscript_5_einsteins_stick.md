@@ -230,7 +230,7 @@ We conducted a 16-experiment matrix isolating the effects of the Relativistic Ad
 
 ### 8.1 Background
 
-In the standard N-body Tonomura protocol, interference is generated via explicit $O(N^2)$ calculations where every particle influences the phase of every other particle. The goal of the Relativistic Adler Equation (RAE) surrogate model is to replace this heavy computational burden with a generalized continuum fluid approach using localized strain ($\nabla \gamma$) and a restoring phase-spring ($\kappa \theta$).
+In the standard N-body Tonomura protocol, interference is generated via explicit $O(N^2)$ calculations where every particle influences the phase of every other particle. The goal of the Relativistic Adler Equation (RAE) surrogate model is to replace this heavy computational burden with a generalized continuum lattice strain approach using localized metric strain ($\nabla \gamma$) and a restoring phase-spring ($\kappa \theta$).
 
 
 

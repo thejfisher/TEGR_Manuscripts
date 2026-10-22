@@ -45,8 +45,12 @@ This repository is published not as a single retrospective textbook, but as an h
 | **MS 18** | [Manuscript_18_TEGR_Hydrogen.md](Manuscript_18_TEGR_Hydrogen.md) | TEGR Hydrogen atom mechanics and Wigner-Huntington metallic hydrogen phase transition. | *Preprint* |
 | **MS 19** | [Manuscript_19_The_Bohmian_Artifact.md](Manuscript_19_The_Bohmian_Artifact.md) | The Bohmian Artifact: Phase-space trajectory geometry and non-crossing validation. | *Preprint* |
 | **MS 20** | [Manuscript_20_Emergent_Nuclear_Dynamics.md](Manuscript_20_Emergent_Nuclear_Dynamics.md) | Emergent nuclear dynamics and short-range saturation from geometric torsion. | *Preprint* |
+| **MS 21** | [manuscript_21_gauge_symmetries.md](manuscript_21_gauge_symmetries.md) | Spontaneous emergence of gauge-like symmetries from pure relativistic lattice kinematics. | *Preprint* |
+| **MS 26** | [manuscript_26_high_z_hubble.md](manuscript_26_high_z_hubble.md) | High-Z Hubble Flow: Early universe accretion and impedance-driven cosmological redshift. | *Preprint* |
 | **MS 32** | [manuscript_32.md](manuscript_32.md) | Bochner technique, Ricci flat manifolds, and vanishing harmonic 1-forms in TEGR. | *Preprint* |
+| **MS 33** | [manuscript_33.md](manuscript_33.md) | Topological Kinematics: Wave-wake synchronization, Color Confinement limit, and relativistic mass emergence. | *Preprint* |
 | **MS 34** | [34_Siegel_Zero_Collinearity.md](34_Siegel_Zero_Collinearity.md) | Collinearity traps, SINDy regression dynamics, and Riemann zeta zero distributions. | *Preprint* |
+| **MS 40** | [manuscript_40_galaxy_rotation.md](manuscript_40_galaxy_rotation.md) | Emergent Galactic Rotation Boost and Dynamical Wave-Wake Backreaction in a Discrete Teleparallel Vacuum. | *Preprint* |
 
 ---
 
